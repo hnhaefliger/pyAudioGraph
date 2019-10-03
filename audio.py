@@ -12,7 +12,7 @@ CHUNK = int(RATE/20)
 
 stream = mic.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, output=True, frames_per_buffer=CHUNK)
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(14,6))
 
 x = np.arange(0, 2 * CHUNK, 2)
 ax.set_ylim(-200, 200)
